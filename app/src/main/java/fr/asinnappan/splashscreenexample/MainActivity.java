@@ -2,6 +2,7 @@ package fr.asinnappan.splashscreenexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -49,8 +50,9 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == RC_SIGN_IN) {
             IdpResponse response = IdpResponse.fromResultIntent(data);
 
+            Intent intent = new Intent(MainActivity.this, Home.class);
             if (resultCode == RESULT_OK) {
-                
+                startActivity(intent);
             }
         }
     }

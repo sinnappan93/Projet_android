@@ -8,4 +8,6 @@
     <color name="blanco">#EDFFFFFF</color>
     <color name="black">#ED131313</color>
     <color name="blue_button">#FF046A77</color>
+    <color name="bluedark_button">#04464E</color>
+    <color name="red_background">#770734</color>
 </resources>

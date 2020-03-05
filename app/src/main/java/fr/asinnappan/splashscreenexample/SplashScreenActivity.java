@@ -2,13 +2,19 @@ package fr.asinnappan.splashscreenexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+    private Context context = this;
     private final int SPLASH_SCREEN_TIMEOUT = 3000;
 
     @Override
@@ -21,11 +27,30 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                finish();
+                final ImageView image = findViewById(R.id.image_icon);
+                Animation animation = AnimationUtils.loadAnimation(context, R.anim.splash_screen_animation);
+                animation.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                        findViewById(R.id.progress_bar).setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        image.setVisibility(View.GONE);
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                image.startAnimation(animation);
             }
         }, SPLASH_SCREEN_TIMEOUT);
-
     }
 }
+
