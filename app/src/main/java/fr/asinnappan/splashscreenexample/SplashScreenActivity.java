@@ -1,7 +1,6 @@
 package fr.asinnappan.splashscreenexample;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +10,8 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -37,10 +38,17 @@ public class SplashScreenActivity extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        image.setVisibility(View.GONE);
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(intent);
-                        finish();
+                        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+                            Toast.makeText(SplashScreenActivity.this, "Connecté", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), Home.class);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            image.setVisibility(View.GONE);
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
                     }
 
                     @Override
@@ -52,5 +60,11 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
         }, SPLASH_SCREEN_TIMEOUT);
     }
+
+
+
+
+
+
 }
 

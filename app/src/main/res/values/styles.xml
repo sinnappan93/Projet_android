@@ -17,9 +17,6 @@
         <item name="colorAccent">@android:color/holo_red_dark</item>
     </style>
 
-    <style name="PersonalizeTitle" parent="Theme.AppCompat.DayNight">
-        <item name="title_home"></item>
-    </style>
 
     <style name="LoginTheme" parent="FirebaseUI">
         <item name="colorPrimary">@color/colorPrimary</item>

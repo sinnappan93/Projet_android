@@ -3,11 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorBoutton">#FF9E0D07</color>
+    <color name="red">#FF9E0D07</color>
+    <color name="colorBoutton">#E8322B</color>
     <color name="colorBackground">#4D2B3231</color>
     <color name="blanco">#EDFFFFFF</color>
     <color name="black">#ED131313</color>
     <color name="blue_button">#FF046A77</color>
     <color name="bluedark_button">#04464E</color>
-    <color name="red_background">#770734</color>
+    <color name="red_background">#4F5254</color>
 </resources>
