@@ -18,6 +18,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
+//        ------------------------------------------------------------------------------------------
+//        Bouton de connexion qui permet de se connecter, on recupère les methodes de firebase qui premettent de se connecter via l'adresse email.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+//        ------------------------------------------------------------------------------------------
+//        Si la variable RC_SIGN_IN est retournée par la partie de code precedent alors on recupere les infos et on lance l'activité Main.
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -5,36 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/background">
+>
 
 
     <Button
         android:id="@+id/bouton_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:padding="15dp"
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="152dp"
         android:background="@drawable/bouton_background"
-        android:text="@string/connexion"
-        android:textColor="@color/blanco"
         android:clickable="true"
         android:focusable="true"
-
-        app:layout_constraintHorizontal_bias="0.498"
+        android:padding="15dp"
+        android:text="connectez vous "
+        android:textColor="@color/blanco"
+        android:textStyle="normal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView"></Button>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="402dp"
-        android:layout_height="290dp"
+        android:layout_width="393dp"
+        android:layout_height="280dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_transparent" />
 
+    <TextView
+        android:id="@+id/texte1"
+        android:layout_width="354dp"
+        android:layout_height="16dp"
+        android:fontFamily="monospace"
+        android:text="copyright 2020-2021"
+        android:textAlignment="center"
+        android:textColor="@color/gris"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <TextView
+        android:id="@+id/texte2"
+        android:layout_width="356dp"
+        android:layout_height="19dp"
+        android:fontFamily="monospace"
+        android:text="Provided by Alain sinnappan"
+        android:textAlignment="center"
+        android:textColor="@color/gris"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

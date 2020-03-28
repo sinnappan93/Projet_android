@@ -3,23 +3,26 @@ package fr.asinnappan.splashscreenexample;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
-import java.sql.Time;
-import java.text.DateFormat;
+
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Locale;
 
 public class Home extends AppCompatActivity {
 
     ImageView userLogout;
-    FirebaseAuth firebaseAuth;
+    private ImageView display;
+    private ImageView emprunter_rendre;
+    private Button add;
+
+
+//    ----------------------------------------------------------------------------------------------
+//        Bouton de deconnexion qui redirige vers le MainActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +38,34 @@ public class Home extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity( intent);
                 Toast.makeText(Home.this, "Déconnecté", Toast.LENGTH_SHORT).show();
+            }
+        });
 
+//        ------------------------------------------------------------------------------------------
+//        Les boutons du menu pour rediriger vers les diffèrentes pages web
+
+        this.display = findViewById(R.id.button_display);
+        display.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DisplayDevice.class);
+                startActivity(intent);
+            }
+        });
+
+        this.emprunter_rendre = findViewById(R.id.button_get);
+        emprunter_rendre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), GetDevice.class);
+                startActivity(intent);
             }
         });
 
 
+
+//        ------------------------------------------------------------------------------------------
+//        Timer sur la page home
 
         Thread t = new Thread() {
             @Override

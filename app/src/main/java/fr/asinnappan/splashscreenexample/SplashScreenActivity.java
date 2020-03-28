@@ -18,6 +18,9 @@ public class SplashScreenActivity extends AppCompatActivity {
     private Context context = this;
     private final int SPLASH_SCREEN_TIMEOUT = 3000;
 
+//    ----------------------------------------------------------------------------------------------
+//    Lors du lancement de l'application on lance une image qui charge et au bout de 3sec elle charge un effet zoom et ouvre l'activité MainActivity
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -52,9 +55,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onAnimationRepeat(Animation animation) {
-
-                    }
+                    public void onAnimationRepeat(Animation animation) {}
                 });
                 image.startAnimation(animation);
             }

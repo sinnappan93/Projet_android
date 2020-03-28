@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home"
-    android:background="@drawable/background"
     >
 
     <TextView
         android:id="@+id/text_view_date"
-        android:layout_width="231dp"
-        android:layout_height="104dp"
+        android:layout_width="255dp"
+        android:layout_height="51dp"
         android:fontFamily="monospace"
         android:text="Date"
         android:textAlignment="center"
-        android:textColor="@color/blanco"
+        android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,69 +22,63 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
 
-    <Button
-        android:id="@+id/button_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Ajouter un appareil"
-        android:textAllCaps="false"
-        android:textColor="@color/blanco"
-        android:background="@drawable/bouton_background"
+    <ImageView
+        android:id="@+id/button_display"
+        android:layout_width="160dp"
+        android:layout_height="101dp"
+        android:src="@drawable/laptop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.271" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Liste de mes appareils"
-        android:textAllCaps="false"
-        android:textColor="@color/blanco"
-        android:background="@drawable/bouton_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Emprunter un appareil"
-        android:textAllCaps="false"
-        android:textColor="@color/blanco"
-        android:background="@drawable/bouton_background"
+    <TextView
+        android:id="@+id/liste_des_appareils"
+        android:layout_width="212dp"
+        android:layout_height="28dp"
+        android:fontFamily="monospace"
+        android:text="Liste des appareils"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.402" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="Rendre un appareil"
-        android:textAllCaps="false"
-        android:textColor="@color/blanco"
-        android:background="@drawable/bouton_background"
+
+    <ImageView
+        android:id="@+id/button_get"
+        android:layout_width="162dp"
+        android:layout_height="117dp"
+        android:src="@drawable/give_pc"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.535" />
+
+    <TextView
+        android:id="@+id/empunter_rendre"
+        android:layout_width="212dp"
+        android:layout_height="28dp"
+        android:fontFamily="monospace"
+        android:text="Emprunter / Rendre "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
 
     <ImageView
         android:id="@+id/logout"
@@ -97,7 +90,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintVertical_bias="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

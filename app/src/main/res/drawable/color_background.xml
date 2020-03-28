@@ -4,7 +4,7 @@
     <solid android:color="@color/blue_button"/>
     <gradient
         android:type="linear"
-        android:startColor="@color/blue_button"
-        android:centerColor="@color/blue_button"
-        android:endColor="@color/bluedark_button"/>
+        android:startColor="@color/gris"
+        android:centerColor="@color/gris"
+        android:endColor="@color/gris"/>
 </shape>

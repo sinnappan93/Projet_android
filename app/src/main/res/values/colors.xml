@@ -9,6 +9,13 @@
     <color name="blanco">#EDFFFFFF</color>
     <color name="black">#ED131313</color>
     <color name="blue_button">#FF046A77</color>
-    <color name="bluedark_button">#04464E</color>
+    <color name="bluedark_button">#293998</color>
     <color name="red_background">#4F5254</color>
+    <color name="vert_foncée">#024E05</color>
+    <color name="vert_clair">#04B60B</color>
+    <color name="vert_milieu">#076A0B</color>
+    <color name="gris">#6C6E6C</color>
+    <color name="bg_1">#01252B</color>
+    <color name="bg_2">#04353C</color>
+    <color name="bg_3">#094750</color>
 </resources>
