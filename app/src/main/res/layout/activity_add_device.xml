@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDevice">
+
+    <ImageView
+        android:id="@+id/image_add"
+        android:layout_width="283dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/laptop" />
+
+    <EditText
+        android:id="@+id/add_marque"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:hint="Marque de l'appareil"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        app:srcCompat="@drawable/laptop" />
+
+    <EditText
+        android:id="@+id/add_os"
+        android:layout_width="325dp"
+        android:layout_height="46dp"
+        android:hint="OS de l'appareil"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
+        app:srcCompat="@drawable/laptop" />
+
+    <EditText
+        android:id="@+id/add_id"
+        android:layout_width="325dp"
+        android:layout_height="46dp"
+        android:hint="Identifiant de l'appareil"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581"
+        app:srcCompat="@drawable/laptop" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="119dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bouton_valider"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="15dp"
+        android:text="Valider"
+        android:textColor="@color/blanco"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="119dp"
+        android:layout_height="46dp"
+        android:background="@drawable/deconnexion_home"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="15dp"
+        android:text="Retour"
+        android:textColor="@color/blanco"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
